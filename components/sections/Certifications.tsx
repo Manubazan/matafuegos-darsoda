@@ -11,10 +11,10 @@ const certifications = [
     description: "Sistema de Gestion de Calidad certificado",
   },
   {
-    icon: <Shield className="w-12 h-12" />,
-    title: "IRAM",
-    description: "Normas argentinas de seguridad",
-  },
+  icon: <Shield className="w-12 h-12" />,
+  title: "Bureau Veritas",
+  description: "Certificación internacional de calidad",
+},
   {
     icon: <FileCheck className="w-12 h-12" />,
     title: "Habilitacion Municipal",
