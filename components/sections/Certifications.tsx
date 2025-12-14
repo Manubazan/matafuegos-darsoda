@@ -5,25 +5,21 @@ import { Award, Shield, FileCheck, BadgeCheck } from "lucide-react";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 const certifications = [
-  {
-    icon: <Award className="w-12 h-12" />,
-    title: "ISO 9001",
-    description: "Sistema de Gestion de Calidad certificado",
-  },
+
   {
   icon: <Shield className="w-12 h-12" />,
   title: "Bureau Veritas",
-  description: "Certificación internacional de calidad",
+  description: "Certificación de normas Iram con sello de calidad internacional",
 },
   {
     icon: <FileCheck className="w-12 h-12" />,
-    title: "Habilitacion Municipal",
-    description: "Empresa habilitada en Rosario",
+    title: "OPDS",
+    description: "Certificaion Nº536"
   },
   {
     icon: <BadgeCheck className="w-12 h-12" />,
-    title: "Bomberos",
-    description: "Avalado por Bomberos Voluntarios",
+    title: "Prefectura",
+    description: "licenciatario Nº LD-06"
   },
 ];
 

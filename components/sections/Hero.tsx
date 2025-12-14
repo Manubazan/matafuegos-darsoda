@@ -61,6 +61,7 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center bg-gradient-to-br from-secondary via-secondary-light to-secondary overflow-hidden"
     >
+      {/* Fondos difuminados */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
@@ -68,6 +69,7 @@ export default function Hero() {
 
       <div className="container-custom relative z-10 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Columna izquierda */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -88,8 +90,8 @@ export default function Hero() {
             <span className="text-primary-light font-bold text-3xl">
               {yearsCount}
             </span>{" "}
-            anos protegiendo vidas y patrimonios en Rosario y toda la region.
-            Venta, recarga y mantenimiento de matafuegos con garantia.
+            años protegiendo vidas y patrimonios en Rosario y toda la región.
+            Venta, recarga y mantenimiento de matafuegos con garantía.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -123,7 +125,7 @@ export default function Hero() {
                 <Award className="w-8 h-8 text-primary-light" />
               </div>
               <p className="text-2xl font-bold text-white">+25</p>
-              <p className="text-sm text-gray-400">Anos de Experiencia</p>
+              <p className="text-sm text-gray-400">Años de Experiencia</p>
             </motion.div>
 
             <motion.div
@@ -152,8 +154,8 @@ export default function Hero() {
               <p className="text-sm text-gray-400">Garantizado</p>
             </motion.div>
           </div>
-          <motion.div />
 
+          {/* Círculo central */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -161,31 +163,18 @@ export default function Hero() {
             className="hidden lg:flex justify-center items-center"
           >
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-80 h-80 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shadow-2xl animate-pulse">
                 <div className="text-center text-white">
                   <div className="text-8xl mb-4">🧯</div>
-                  <p className="text-xl font-bold">Proteccion Total</p>
+                  <p className="text-xl font-bold">Protección Total</p>
                 </div>
               </div>
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -top-4 -right-4 bg-white p-4 rounded-xl shadow-lg"
-              >
-                <p className="text-primary font-bold text-lg">ISO 9001</p>
-              </motion.div>
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2.5, repeat: Infinity }}
-                className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg"
-              >
-                <p className="text-secondary font-bold text-lg">IRAM</p>
-              </motion.div>
             </div>
           </motion.div>
         </div>
       </div>
 
+      {/* Indicador de scroll */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 1.5, repeat: Infinity }}
